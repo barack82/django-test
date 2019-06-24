@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User's List</title>
+</head>
+<body>
+	<h1>THIS IS A USER LIST CREATED BY ME</h1>
+	
+	<ol>
+		{% for x in this_user %}
+		<li>User Info</li>
+			<ul>
+				<li>First Name : {{ x.fname}} </li>
+				<li>Last Name : {{ x.lname}} </li>
+				<li>Email : {{ x.email}} </li>		
+			</ul>
+
+		{% endfor %}
+	</ol>
+	
+</body>
+</html>
